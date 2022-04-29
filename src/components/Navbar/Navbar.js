@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.left}>
         <div className="logo">
-          <Link to="/">WEDDING CART</Link>
+          <Link to="/" style={{textDecoration:"none"}}>WEDDING CART</Link>
         </div>
         <ul className={styles.menu}>
           <li>
@@ -19,10 +19,10 @@ const Navbar = () => {
       </div>
       <div className="right">
         <Stack spacing={2} direction="row" >
-          <Link to="/signin" >
+          <Link to="/signin"style={{textDecoration : "none"}}>
           <Button size ="small" variant="contained" color="error" >SIGN IN </Button>
           </Link>
-          <Link to="/signup" underline="none">
+          <Link to="/signup" style={{textDecoration : "none"}}>
           <Button size ="small" variant="contained" color="success" >SIGN UP</Button>
           </Link>
           

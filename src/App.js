@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Auth/Home";
+import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import SignIn from "./pages/Auth/SignIn/SignIn";
@@ -16,7 +16,7 @@ function App() {
         <div id="content">
 
           <Routes>
-            <Route path="/" exact element={<Home/>} />
+            <Route path="/" exact element={<Products/>} />
             <Route path="signin" element={<SignIn/>} />
             <Route path="signup" element={<SignUp/>} />
           </Routes>
