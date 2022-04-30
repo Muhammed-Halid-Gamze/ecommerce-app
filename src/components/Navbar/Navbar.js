@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
-        <div className="logo">
+        <div className={styles.logo}>
           <Link to="/" style={{textDecoration:"none"}}>WEDDING CART</Link>
         </div>
         <ul className={styles.menu}>

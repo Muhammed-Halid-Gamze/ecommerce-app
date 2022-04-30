@@ -29,3 +29,6 @@
 .nav .left .menu li a:hover{
     color: red;
 }
+.logo{
+   font-weight: bold; 
+}

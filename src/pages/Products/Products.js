@@ -17,7 +17,7 @@ const Products = () => {
   );
 };
 
-const MyList = [
+ export const MyList = [
   {
     id: "1",
     name: "Scissor",
