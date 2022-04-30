@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import SignIn from "./pages/Auth/SignIn/SignIn";
 import SignUp from "./pages/Auth/SıgnUp/SignUp";
+import ProductDetail from "./pages/ProductDetail/ProductDetail"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
           <Routes>
             <Route path="/" exact element={<Products/>} />
+            <Route path="/product/:id"  element={<ProductDetail/>} />
             <Route path="signin" element={<SignIn/>} />
             <Route path="signup" element={<SignUp/>} />
           </Routes>

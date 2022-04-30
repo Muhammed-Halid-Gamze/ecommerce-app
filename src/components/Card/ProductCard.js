@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
         margin: 2,
       }}
     >
-      <Link to="/#" style={{ textDecoration: "none" }}>
+      <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }}>
         <CardActionArea>
           <CardMedia
             component="img"
