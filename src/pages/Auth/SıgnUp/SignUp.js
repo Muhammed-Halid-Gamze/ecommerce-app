@@ -11,8 +11,10 @@ import {
   Avatar,
   FormControlLabel,
   FormLabel,
+  FormGroup,
   Radio,
   RadioGroup,
+  Checkbox,
 } from "@mui/material";
 import styles from "../SıgnUp/styles.module.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -46,7 +48,14 @@ const SignUp = () => {
                 alignItems: "center",
               }}
             >
-              <Avatar sx={{ bgcolor: deepPurple[500], height: 70, width: 70 }}>
+              <Avatar
+                sx={{
+                  bgcolor: deepPurple[500],
+                  height: 70,
+                  width: 70,
+                  marginBottom: 3,
+                }}
+              >
                 <AccountCircleIcon sx={{ fontSize: 50 }} />
               </Avatar>
               Sign Up
@@ -76,28 +85,6 @@ const SignUp = () => {
                 </FormHelperText>
               </FormControl>
               <FormControl sx={{ marginTop: 3 }}>
-                <FormLabel id="demo-radio-buttons-group-label" sx={{textAlign:"left"}}>
-                  Gender
-                </FormLabel>
-                <RadioGroup
-                  aria-labelledby="demo-radio-buttons-group-label"
-                  defaultValue="female"
-                  name="radio-buttons-group"
-                  sx={{ display: "initial" }}
-                >
-                  <FormControlLabel
-                    value="female"
-                    control={<Radio />}
-                    label="Female"
-                  />
-                  <FormControlLabel
-                    value="male"
-                    control={<Radio />}
-                    label="Male"
-                  />
-                </RadioGroup>
-              </FormControl>
-              <FormControl sx={{ marginTop: 3 }}>
                 <InputLabel htmlFor="my-password">Password</InputLabel>
                 <Input
                   id="my-password"
@@ -123,6 +110,33 @@ const SignUp = () => {
                   We'll never share your email.
                 </FormHelperText> */}
               </FormControl>
+              <FormControl sx={{ marginTop: 3 }}>
+                <FormLabel id="demo-radio-buttons-group-label">
+                  Gender
+                </FormLabel>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  name="radio-buttons-group"
+                  sx={{ display: "initial" }}
+                >
+                  <FormControlLabel
+                    value="female"
+                    control={<Radio />}
+                    label="Female"
+                  />
+                  <FormControlLabel
+                    value="male"
+                    control={<Radio />}
+                    label="Male"
+                  />
+                </RadioGroup>
+              </FormControl>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="I accept terms and conditions"
+                />
+              </FormGroup>
             </Box>
             <Box
               sx={{

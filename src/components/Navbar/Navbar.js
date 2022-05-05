@@ -23,7 +23,7 @@ const Navbar = () => {
           <Button size ="small" variant="contained" color="error" >SIGN IN </Button>
           </Link>
           <Link to="/signup" style={{textDecoration : "none"}}>
-          <Button size ="small" variant="contained" color="success" >SIGN UP</Button>
+          <Button size ="small" variant="contained" color="secondary" >SIGN UP</Button>
           </Link>
           
         </Stack>
