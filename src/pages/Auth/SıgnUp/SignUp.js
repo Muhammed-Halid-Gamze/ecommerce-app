@@ -160,4 +160,3 @@ const SignUp = () => {
 };
 
 export default SignUp;
-npm
