@@ -4,15 +4,17 @@ import myProductList from "../../components/myList.json";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShareIcon from "@mui/icons-material/Share";
 
 import { MyList } from "../Products/Products";
-import { display } from "@mui/system";
-console.log(MyList)
+console.log(MyList);
 const ProductList = JSON.parse(JSON.stringify(myProductList));
 console.log(ProductList);
 
@@ -22,35 +24,90 @@ const ProductDetail = () => {
   console.log(ViewProduct);
 
   return (
-      <Box style={{alignItems:"center", textAlign:"center",justifyContent:"left", display:"flex"}}>
-
-            <Card sx={{ 
-                maxWidth: 745,
-                justifyContent:"center",
-                textAlign:"center"
-            }}>
+    <Box
+      style={{
+        alignItems: "center",
+        textAlign: "center",
+        justifyContent: "left",
+        display: "flex",
+        flexGrow: 1,
+      }}
+    >
+      <Grid container spacing={3}>
+        <Grid item xs={1}>
+          <Box></Box>
+        </Grid>
+        <Grid item xs={3}>
+          <Card
+            sx={{
+              maxWidth: 745,
+              maxHeight:500,
+              justifyContent: "center",
+              textAlign: "center",
+              height: 500,
+            }}
+          >
             <CardMedia
-            component="img"
-            height="360"
-            image={ViewProduct.imgUrl}
-            alt={ViewProduct.name}
+              component="img"
+              height="400"
+              image={ViewProduct.imgUrl}
+              alt={ViewProduct.name}
             />
-            <CardContent>
-            <Typography gutterBottom variant="h4" component="div">
-            {ViewProduct.name}
-            </Typography>
-            
-            <Typography gutterBottom variant="h5" component="div">
-            {ViewProduct.price}$
-            </Typography>
-            </CardContent>
-            <CardActions  style={{justifyContent:"center"}}>
-            <Button size="small" variant="contained">ADD TO CART</Button>
-            
-            </CardActions>
-        </Card>
 
-      </Box>
+            <CardActions style={{ justifyContent: "center" }}>
+              <IconButton aria-label="add to favorites">
+                <FavoriteIcon />
+              </IconButton>
+              <IconButton aria-label="share">
+                <ShareIcon />
+              </IconButton>
+              {/* <Typography>
+
+              <Button size="small" variant="contained">
+                CHANGE TO PHOTO
+              </Button>
+              </Typography> */}
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={7}>
+          <Card
+            sx={{
+              maxWidth: 745,
+              justifyContent: "center",
+              textAlign: "center",
+              height: 500,
+              maxHeight:500,
+            }}
+          >
+            <CardContent>
+              <Typography gutterBottom variant="h4" component="div">
+                {ViewProduct.name}
+              </Typography>
+              <Typography gutterBottom variant="h6" component="div">
+                {ViewProduct.desc}
+              </Typography>
+
+              <Typography gutterBottom variant="h4" component="div">
+                {ViewProduct.price}$
+              </Typography>
+
+              <Typography gutterBottom variant="h6" component="div">
+                {ViewProduct.longDesc}
+              </Typography>
+            </CardContent>
+            <CardActions style={{ justifyContent: "center" }}>
+              <Button size="small" variant="contained">
+                ADD TO CART
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={1}>
+          <Box></Box>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
