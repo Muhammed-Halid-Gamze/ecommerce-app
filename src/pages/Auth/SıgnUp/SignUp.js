@@ -18,16 +18,16 @@ import {
 } from "@mui/material";
 import styles from "../SıgnUp/styles.module.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { deepPurple } from "@mui/material/colors";
+import { deepPurple, purple } from "@mui/material/colors";
 
 const SignUp = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
-        <Grid item xs={0} sm={3}>
+        <Grid item xs={0} sm={4}>
           <Box></Box>
         </Grid>
-        <Grid item xs={12} sm={6} align="center  ">
+        <Grid item xs={12} sm={4} align="center  ">
           <Box
             sx={{
               alignItems: "center",
@@ -48,9 +48,9 @@ const SignUp = () => {
                 alignItems: "center",
               }}
             >
-              <Avatar
+              <Avatar 
                 sx={{
-                  bgcolor: deepPurple[500],
+                  backgroundColor: purple[500],
                   height: 70,
                   width: 70,
                   marginBottom: 3,
@@ -61,7 +61,7 @@ const SignUp = () => {
               Sign Up
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <FormControl sx={{ marginTop: 3 }}>
+              <FormControl sx={{ marginTop: 1 }}>
                 <InputLabel htmlFor="my-name">Name</InputLabel>
                 <Input
                   id="my-name"
@@ -72,7 +72,7 @@ const SignUp = () => {
                   We'll never share your name.
                 </FormHelperText>
               </FormControl>
-              <FormControl sx={{ marginTop: 3 }}>
+              <FormControl sx={{ marginTop: 1 }}>
                 <InputLabel htmlFor="my-email">Email address</InputLabel>
                 <Input
                   id="my-email"
@@ -84,7 +84,7 @@ const SignUp = () => {
                   We'll never share your email.
                 </FormHelperText>
               </FormControl>
-              <FormControl sx={{ marginTop: 3 }}>
+              <FormControl sx={{ marginTop: 1 }}>
                 <InputLabel htmlFor="my-password">Password</InputLabel>
                 <Input
                   id="my-password"
@@ -96,7 +96,7 @@ const SignUp = () => {
                   We'll never share your password.
                 </FormHelperText> */}
               </FormControl>
-              <FormControl sx={{ marginTop: 3 }}>
+              <FormControl sx={{ marginTop: 1 }}>
                 <InputLabel htmlFor="my-pssword-confirm">
                   Password Confirm
                 </InputLabel>
@@ -110,7 +110,7 @@ const SignUp = () => {
                   We'll never share your email.
                 </FormHelperText> */}
               </FormControl>
-              <FormControl sx={{ marginTop: 3 }}>
+              <FormControl sx={{ marginTop: 1 }}>
                 <FormLabel id="demo-radio-buttons-group-label">
                   Gender
                 </FormLabel>
@@ -142,16 +142,16 @@ const SignUp = () => {
               sx={{
                 textAlign: "center",
                 justifyContent: "center",
-                marginTop: 5,
+                marginTop: 1
               }}
             >
-              <Button type="submit" variant="contained" color="secondary">
+              <Button type="submit" variant="contained" color="secondary" fullWidth>
                 SIGN UP
               </Button>
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={0} sm={3}>
+        <Grid item xs={0} sm={4}>
           <Box></Box>
         </Grid>
       </Grid>
@@ -160,3 +160,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+npm
