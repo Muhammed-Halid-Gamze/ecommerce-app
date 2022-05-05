@@ -41,7 +41,7 @@ const ProductDetail = () => {
           <Card
             sx={{
               maxWidth: 745,
-              maxHeight:500,
+              maxHeight:400,
               justifyContent: "center",
               textAlign: "center",
               height: 500,
