@@ -81,18 +81,18 @@ const ProductDetail = () => {
             }}
           >
             <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
+              <Typography  variant="h4" component="div">
                 {ViewProduct.name}
               </Typography>
-              <Typography gutterBottom variant="h6" component="div">
+              <Typography  variant="h6" component="div">
                 {ViewProduct.desc}
               </Typography>
 
-              <Typography gutterBottom variant="h4" component="div">
+              <Typography  variant="h4" component="div">
                 {ViewProduct.price}$
               </Typography>
 
-              <Typography gutterBottom variant="h6" component="div">
+              <Typography  variant="h6" component="div">
                 {ViewProduct.longDesc}
               </Typography>
             </CardContent>
