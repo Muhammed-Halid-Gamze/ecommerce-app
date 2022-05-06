@@ -30,18 +30,19 @@ const ProductDetail = () => {
         textAlign: "center",
         justifyContent: "left",
         display: "flex",
-        flexGrow: 1,
+        flex:"wrap",
+        flexGrow: 1
       }}
     >
       <Grid container spacing={3}>
-        <Grid item xs={1}>
+        <Grid item xs={1} sm={1} md={1} lg={1}>
           <Box></Box>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={10} sm={5} md={4} lg={3}>
           <Card
             sx={{
               maxWidth: 745,
-              maxHeight:400,
+              maxHeight:500,
               justifyContent: "center",
               textAlign: "center",
               height: 500,
@@ -70,13 +71,13 @@ const ProductDetail = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}  sm={5} md={6} lg={7}>
           <Card
             sx={{
               maxWidth: 745,
               justifyContent: "center",
               textAlign: "center",
-              height: 500,
+              height:500,
               maxHeight:500,
             }}
           >
@@ -103,7 +104,7 @@ const ProductDetail = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={1} sm={1} md={1} lg={1}>
           <Box></Box>
         </Grid>
       </Grid>

@@ -130,7 +130,7 @@ const SignIn = () => {
                 </Button>
                 <Typography sx={{ marginTop: 1 }}>
                   <Link href="#" underline="none">
-                    Forgort Password ?
+                    Forgot Password ?
                   </Link>
                 </Typography>
                 <Typography sx={{ marginTop: 1 }}>
