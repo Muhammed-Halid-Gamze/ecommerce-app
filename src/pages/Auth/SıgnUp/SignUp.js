@@ -32,10 +32,9 @@ const SignUp = () => {
             sx={{
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 5,
+              marginTop: 3,
               marginBottom: 5,
               padding: 5,
-             
             }}
             className={styles.form}
           >
@@ -49,7 +48,7 @@ const SignUp = () => {
                 alignItems: "center",
               }}
             >
-              <Avatar 
+              <Avatar
                 sx={{
                   backgroundColor: purple[500],
                   height: 70,
@@ -143,10 +142,15 @@ const SignUp = () => {
               sx={{
                 textAlign: "center",
                 justifyContent: "center",
-                marginTop: 1
+                marginTop: 1,
               }}
             >
-              <Button type="submit" variant="contained" color="secondary" fullWidth>
+              <Button
+                type="submit"
+                variant="contained"
+                color="secondary"
+                fullWidth
+              >
                 SIGN UP
               </Button>
             </Box>

@@ -30,8 +30,8 @@ const ProductDetail = () => {
         textAlign: "center",
         justifyContent: "left",
         display: "flex",
-        flex:"wrap",
-        flexGrow: 1
+        flex: "wrap",
+        flexGrow: 1,
       }}
     >
       <Grid container spacing={3}>
@@ -42,7 +42,7 @@ const ProductDetail = () => {
           <Card
             sx={{
               maxWidth: 745,
-              maxHeight:500,
+              maxHeight: 500,
               justifyContent: "center",
               textAlign: "center",
               height: 500,
@@ -71,29 +71,29 @@ const ProductDetail = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12}  sm={5} md={6} lg={7}>
+        <Grid item xs={12} sm={5} md={6} lg={7}>
           <Card
             sx={{
               maxWidth: 745,
               justifyContent: "center",
               textAlign: "center",
-              height:500,
-              maxHeight:500,
+              height: 500,
+              maxHeight: 500,
             }}
           >
             <CardContent>
-              <Typography  variant="h4" component="div">
+              <Typography variant="h4" component="div">
                 {ViewProduct.name}
               </Typography>
-              <Typography  variant="h6" component="div">
+              <Typography variant="h6" component="div">
                 {ViewProduct.desc}
               </Typography>
 
-              <Typography  variant="h4" component="div">
+              <Typography variant="h4" component="div">
                 {ViewProduct.price}$
               </Typography>
 
-              <Typography  variant="h6" component="div">
+              <Typography variant="h6" component="div">
                 {ViewProduct.longDesc}
               </Typography>
             </CardContent>
