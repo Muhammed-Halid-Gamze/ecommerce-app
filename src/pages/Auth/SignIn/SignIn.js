@@ -12,7 +12,6 @@ import {
   TextField,
   Link,
 } from "@mui/material";
-import styles from "../SıgnUp/styles.module.css";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import { red } from "@mui/material/colors";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -45,7 +44,7 @@ const SignIn = () => {
       <Paper
         elevation={20}
         sx={{
-          height: "70vh",
+          height: "80vh",
           width: 340,
           margin: "20px auto",
           padding: 5,
