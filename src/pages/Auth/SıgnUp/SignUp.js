@@ -24,10 +24,10 @@ const SignUp = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
-        <Grid item xs={0} sm={4}>
+        <Grid item xs={0} sm={3} md={4}>
           <Box></Box>
         </Grid>
-        <Grid item xs={12} sm={4} align="center  ">
+        <Grid item xs={12} sm={6} md={4} align="center  ">
           <Box
             sx={{
               alignItems: "center",
@@ -151,7 +151,7 @@ const SignUp = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={0} sm={4}>
+        <Grid item xs={0} sm={3} md={4}>
           <Box></Box>
         </Grid>
       </Grid>
