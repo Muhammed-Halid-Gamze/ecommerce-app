@@ -40,112 +40,124 @@ const validationSchema = Yup.object().shape({
 
 const SignIn = () => {
   return (
-    <Grid>
-      <Paper
-        elevation={20}
-        sx={{
-          height: "80vh",
-          width: 340,
-          margin: "20px auto",
-          padding: 5,
-          textAlign: "center",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Avatar
-          sx={{
-            bgcolor: red[700],
-            height: 70,
-            width: 70,
-            marginBottom: 3,
-          }}
-        >
-          <LockOpenIcon sx={{ fontSize: 40 }} />
-        </Avatar>
-        <Typography variant="h3">Sign In</Typography>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={3}>
+        <Grid item xs={0} sm={1} md={2} lg={3} xl={4}>
+          <Box></Box>
+        </Grid>
 
-        <Formik
-          initialValues={initialValues}
-          onSubmit={onSubmit}
-          validationSchema={validationSchema}
-        >
-          {(props) => (
-            <Form>
-              <Box>
-                <Field
-                  as={TextField}
-                  sx={{ marginTop: 3 }}
-                  label="Username"
-                  name="username"
-                  placeholder="Enter Username"
-                  helperText={<ErrorMessage name="username" />}
-                  color="error"
-                  fullWidth
-                  required
-                />
-                <Field
-                  as={TextField}
-                  sx={{ marginTop: 3 }}
-                  label="Password"
-                  name="password"
-                  placeholder="Enter Password"
-                  helperText={<ErrorMessage name="password" />}
-                  type="password"
-                  color="error"
-                  fullWidth
-                  required
-                />
+        <Grid item xs={12} sm={10} md={8} lg={6} xl={4}>
+          <Paper
+            elevation={20}
+            sx={{
+              // height: "80vh",
+              // width: 340,
+              margin: "20px auto",
+              padding: 5,
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              flexGrow: 1,
+            }}
+          >
+            <Avatar
+              sx={{
+                bgcolor: red[700],
+                height: 70,
+                width: 70,
+                marginBottom: 3,
+              }}
+            >
+              <LockOpenIcon sx={{ fontSize: 40 }} />
+            </Avatar>
+            <Typography variant="h3">Sign In</Typography>
 
-                <FormGroup>
-                  <Field
-                    as={FormControlLabel}
-                    control={
-                      <Checkbox
-                        sx={{
-                          color: red[700],
-                          "&.Mui-checked": {
-                            color: red[700],
-                          },
-                        }}
+            <Formik
+              initialValues={initialValues}
+              onSubmit={onSubmit}
+              validationSchema={validationSchema}
+            >
+              {(props) => (
+                <Form>
+                  <Box>
+                    <Field
+                      as={TextField}
+                      sx={{ marginTop: 3 }}
+                      label="Username"
+                      name="username"
+                      placeholder="Enter Username"
+                      helperText={<ErrorMessage name="username" />}
+                      color="error"
+                      fullWidth
+                      required
+                    />
+                    <Field
+                      as={TextField}
+                      sx={{ marginTop: 3 }}
+                      label="Password"
+                      name="password"
+                      placeholder="Enter Password"
+                      helperText={<ErrorMessage name="password" />}
+                      type="password"
+                      color="error"
+                      fullWidth
+                      required
+                    />
+
+                    <FormGroup>
+                      <Field
+                        as={FormControlLabel}
+                        control={
+                          <Checkbox
+                            sx={{
+                              color: red[700],
+                              "&.Mui-checked": {
+                                color: red[700],
+                              },
+                            }}
+                          />
+                        }
+                        label="Remember Me"
+                        name="remember"
                       />
-                    }
-                    label="Remember Me"
-                    name="remember"
-                  />
-                </FormGroup>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  disabled={props.isSubmitting}
-                  sx={{
-                    marginTop: 3,
-                    bgcolor: red[700],
-                    "&:hover": { bgcolor: red[700] },
-                  }}
-                  fullWidth
-                >
-                  SIGN IN
-                </Button>
-                <Typography sx={{ marginTop: 1 }}>
-                  <Link href="#" underline="none">
-                    Forgot Password ?
-                  </Link>
-                </Typography>
-                <Typography sx={{ marginTop: 1 }}>
-                  {" "}
-                  Do you have account?
-                  <Link href="#" underline="none">
-                    Sign In
-                  </Link>
-                </Typography>
-              </Box>
-            </Form>
-          )}
-        </Formik>
-      </Paper>
-    </Grid>
+                    </FormGroup>
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      disabled={props.isSubmitting}
+                      sx={{
+                        marginTop: 3,
+                        bgcolor: red[700],
+                        "&:hover": { bgcolor: red[700] },
+                      }}
+                      fullWidth
+                    >
+                      SIGN IN
+                    </Button>
+                    <Typography sx={{ marginTop: 1 }}>
+                      <Link href="#" underline="none">
+                        Forgot Password ?
+                      </Link>
+                    </Typography>
+                    <Typography sx={{ marginTop: 1 }}>
+                      {" "}
+                      Do you have account?
+                      <Link href="#" underline="none">
+                        Sign In
+                      </Link>
+                    </Typography>
+                  </Box>
+                </Form>
+              )}
+            </Formik>
+          </Paper>
+        </Grid>
+        <Grid item xs={0} sm={1} md={2} lg={3} xl={4}>
+          <Box></Box>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
