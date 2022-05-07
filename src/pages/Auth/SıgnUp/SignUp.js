@@ -34,13 +34,14 @@ const SignUp = () => {
       acceptTerms: false,
     },
     validationSchema,
-    onSubmit: async (values, bag) => {
+    onSubmit: async (values, props) => {
       setTimeout(() => {
-        bag.resetForm();
-        // bag.setSubmitting(false)
+        props.resetForm();
+        props.setSubmitting(true)
       }, 2000);
-      // console.log(values);
-      // console.log(bag);
+      console.log(values);
+      console.log(props);
+      
     },
   });
   return (
@@ -49,7 +50,7 @@ const SignUp = () => {
         <Grid item xs={0} sm={1} md={2} lg={3} xl={4}>
           <Box></Box>
         </Grid>
-        <Grid item xs={12} sm={10} md={8} lg={6} xl={4} align="center  ">
+        <Grid item xs={12} sm={10} md={8} lg={6} xl={4} align="center">
           <Box
             sx={{
               alignItems: "center",
@@ -82,6 +83,7 @@ const SignUp = () => {
               </Avatar>
               Sign Up
             </Typography>
+            
             <form onSubmit={formik.handleSubmit}>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <FormControl sx={{ marginTop: 1 }}>
@@ -96,12 +98,10 @@ const SignUp = () => {
                     value={formik.values.name}
                   />
                   {formik.errors.name && formik.touched.name && (
-                    <div className="error">{formik.errors.name}</div>
+                    <FormHelperText className={styles.error}>
+                      {formik.errors.name}
+                    </FormHelperText>
                   )}
-
-                  <FormHelperText id="my-helper-text">
-                    We'll never share your name.
-                  </FormHelperText>
                 </FormControl>
                 <FormControl sx={{ marginTop: 1 }}>
                   <InputLabel htmlFor="my-email">Email address</InputLabel>
@@ -116,11 +116,10 @@ const SignUp = () => {
                     value={formik.values.email}
                   />
                   {formik.errors.email && formik.touched.email && (
-                    <div className="error">{formik.errors.email}</div>
+                    <FormHelperText className={styles.error}>
+                      {formik.errors.email}
+                    </FormHelperText>
                   )}
-                  <FormHelperText id="my-helper-text">
-                    We'll never share your email.
-                  </FormHelperText>
                 </FormControl>
                 <FormControl sx={{ marginTop: 1 }}>
                   <InputLabel htmlFor="my-password">Password</InputLabel>
@@ -135,9 +134,9 @@ const SignUp = () => {
                     value={formik.values.password}
                   />
                   {formik.errors.password && formik.touched.password && (
-                    <div className="error" id="error">
+                    <FormHelperText className={styles.error}>
                       {formik.errors.password}
-                    </div>
+                    </FormHelperText>
                   )}
 
                   {/* <FormHelperText id="my-helper-text">
@@ -164,9 +163,9 @@ const SignUp = () => {
                   />
                   {formik.errors.passwordConfirm &&
                     formik.touched.passwordConfirm && (
-                      <div className="error">
+                      <FormHelperText className={styles.error}>
                         {formik.errors.passwordConfirm}
-                      </div>
+                      </FormHelperText>
                     )}
                   {/* <FormHelperText id="my-helper-text">
                       We'll never share your email.
@@ -185,7 +184,9 @@ const SignUp = () => {
                     value={formik.values.gender}
                   >
                     {formik.errors.gender && formik.touched.gender && (
-                      <div className="error">{formik.errors.gender}</div>
+                      <FormHelperText className={styles.error}>
+                        {formik.errors.gender}
+                      </FormHelperText>
                     )}
                     <FormControlLabel
                       value="female"
@@ -209,7 +210,9 @@ const SignUp = () => {
                     value={formik.values.acceptTerms}
                   />
                   {formik.errors.acceptTerms && formik.touched.acceptTerms && (
-                    <div className="error">{formik.errors.acceptTerms}</div>
+                    <FormHelperText className={styles.error}>
+                      {formik.errors.acceptTerms}
+                    </FormHelperText>
                   )}
                 </FormGroup>
               </Box>
@@ -220,10 +223,11 @@ const SignUp = () => {
                   marginTop: 1,
                 }}
               >
-                <Button
+                <Button 
                   type="submit"
                   variant="contained"
                   color="secondary"
+                  // disabled={props.isSubmitting}
                   fullWidth
                 >
                   SIGN UP
