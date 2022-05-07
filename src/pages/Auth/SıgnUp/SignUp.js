@@ -23,7 +23,10 @@ import { purple } from "@mui/material/colors";
 import { useFormik } from "formik";
 import validationSchema from "./Validation";
 
+import {useAuth} from "../../../contexts/AuthContext"
+
 const SignUp = () => {
+  const {login} =useAuth();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -35,6 +38,13 @@ const SignUp = () => {
     },
     validationSchema,
     onSubmit: async (values, props) => {
+      const registerResponse = ({
+        user: values.name,
+        email:values.email,
+        password:values.password
+      })
+      login(registerResponse);
+      console.log(registerResponse);
       setTimeout(() => {
         props.resetForm();
         props.setSubmitting(true)

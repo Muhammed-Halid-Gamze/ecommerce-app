@@ -4,7 +4,11 @@ import styles from "./styles.module.css";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
+import { useAuth } from "../../contexts/AuthContext";
+
 const Navbar = () => {
+  const {loggedIn} = useAuth();
+  console.log(loggedIn);
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
@@ -18,15 +22,27 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="right">
-        <Stack spacing={2} direction="row" >
-          <Link to="/signin"style={{textDecoration : "none"}}>
-          <Button size ="small" variant="contained" color="error" >SIGN IN </Button>
-          </Link>
-          <Link to="/signup" style={{textDecoration : "none"}}>
-          <Button size ="small" variant="contained" color="secondary" >SIGN UP</Button>
-          </Link>
+        {!loggedIn && (
+          <>
+            <Stack spacing={2} direction="row" >
+              <Link to="/signin"style={{textDecoration : "none"}}>
+              <Button size ="small" variant="contained" color="error" >SIGN IN </Button>
+              </Link>
+              <Link to="/signup" style={{textDecoration : "none"}}>
+              <Button size ="small" variant="contained" color="secondary" >SIGN UP</Button>
+              </Link>
+              
+            </Stack>
           
-        </Stack>
+          </>
+        )} 
+        {loggedIn && (
+          <>
+            <Link to="/profile" style={{textDecoration : "none"}}>
+              <Button size ="small" variant="contained" color="error" > PROFILE </Button>
+              </Link>
+          </>
+        )}
       </div>
     </nav>
   );
