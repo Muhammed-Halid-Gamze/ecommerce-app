@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import SignIn from "./pages/Auth/SignIn/SignIn";
 import SignUp from "./pages/Auth/SıgnUp/SignUp";
-import ProductDetail from "./pages/ProductDetail/ProductDetail"
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/product/:product_id"  element={<ProductDetail/>} />
             <Route path="signin" element={<SignIn/>} />
             <Route path="signup" element={<SignUp/>} />
+            <Route path="profile" element={<Profile/>} />
           </Routes>
         </div>
         
