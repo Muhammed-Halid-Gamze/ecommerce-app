@@ -23,8 +23,6 @@ import { purple } from "@mui/material/colors";
 import { useFormik } from "formik";
 import validationSchema from "./Validation"
 
-
-
 const SignUp = () => {
   const formik = useFormik({
     initialValues: {
@@ -41,8 +39,9 @@ const SignUp = () => {
         bag.resetForm()
         // bag.setSubmitting(false)
       },2000)
-      console.log(values);
-      console.log(bag);
+      // console.log(values);
+      // console.log(bag);
+      
     },
   });
   return (
@@ -61,7 +60,7 @@ const SignUp = () => {
               padding: 5,
             }}
             className={styles.form}
-          >
+            >
             <Typography
               variant="h3"
               sx={{
@@ -71,7 +70,7 @@ const SignUp = () => {
                 flexDirection: "column",
                 alignItems: "center",
               }}
-            >
+              >
               <Avatar
                 sx={{
                   backgroundColor: purple[500],
@@ -96,7 +95,10 @@ const SignUp = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.name}
+                    
                   />
+                  {formik.errors.name && formik.touched.name && <div className="error">{formik.errors.name}</div>}
+                  
                   <FormHelperText id="my-helper-text">
                     We'll never share your name.
                   </FormHelperText>
@@ -112,7 +114,8 @@ const SignUp = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
-                  />
+                    />
+                    {formik.errors.email && formik.touched.email && <div className="error">{formik.errors.email}</div>}
                   <FormHelperText id="my-helper-text">
                     We'll never share your email.
                   </FormHelperText>
@@ -128,7 +131,10 @@ const SignUp = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
+                    
                   />
+                  {formik.errors.password && formik.touched.password && <div className="error" id="error">{formik.errors.password}</div>}
+                  
                   {/* <FormHelperText id="my-helper-text">
                       We'll never share your password.
                     </FormHelperText> */}
@@ -146,7 +152,10 @@ const SignUp = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.passwordConfirm}
+                    isinvalid={formik.touched.passwordConfirm && formik.errors.passwordConfirm}
+                  
                   />
+                  {formik.errors.passwordConfirm && formik.touched.passwordConfirm && <div className="error">{formik.errors.passwordConfirm}</div>}
                   {/* <FormHelperText id="my-helper-text">
                       We'll never share your email.
                     </FormHelperText> */}
@@ -163,6 +172,7 @@ const SignUp = () => {
                     onBlur={formik.handleBlur}
                     value={formik.values.gender}
                   >
+                    {formik.errors.gender && formik.touched.gender && <div className="error">{formik.errors.gender}</div>}
                     <FormControlLabel
                       value="female"
                       control={<Radio />}
@@ -184,6 +194,7 @@ const SignUp = () => {
                     onBlur={formik.handleBlur}
                     value={formik.values.acceptTerms}
                   />
+                  {formik.errors.acceptTerms && formik.touched.acceptTerms && <div className="error">{formik.errors.acceptTerms}</div>}
                 </FormGroup>
               </Box>
               <Box
@@ -213,5 +224,4 @@ const SignUp = () => {
     </Box>
   );
 };
-
 export default SignUp;

@@ -16,12 +16,12 @@ import ShareIcon from "@mui/icons-material/Share";
 import { MyList } from "../Products/Products";
 console.log(MyList);
 const ProductList = JSON.parse(JSON.stringify(myProductList));
-console.log(ProductList);
+// console.log(ProductList);
 
 const ProductDetail = () => {
   const { product_id } = useParams();
   const ViewProduct = ProductList[product_id];
-  console.log(ViewProduct);
+  // console.log(ViewProduct);
 
   return (
     <Box

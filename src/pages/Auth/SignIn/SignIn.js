@@ -28,7 +28,7 @@ const onSubmit = (values, props) => {
     props.resetForm();
     props.setSubmitting(false);
   }, 2000);
-  console.log(props);
+  // console.log(props);
 };
 
 const validationSchema = Yup.object().shape({
