@@ -1,26 +1,35 @@
 import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import { Typography } from "@mui/material";
+import { Box,Typography, Button } from "@mui/material";
 
-const Profile = () => {
-    const {user} = useAuth()
+const Profile = ({history}) => {
+    const {user, logout} = useAuth()
     console.log(user)
+   
+
+    const handleLogout = async() => {
+        logout(() => {
+            history.push("/")
+            console.log(history.push)
+            console.log("çalışıyor")
+        })
+    }
 
     return(
-    <div>
-        <Typography variant="h4" sx={{textAlign:"center"}}>My Profile</Typography>
+    <Box sx={{textAlign:"center"}}>
+        <Typography variant="h4" >My Profile</Typography>
 
         <br/>
-        <Typography variant="h6" sx={{textAlign:"center"}}>Username:{user.name}</Typography>
-        <Typography variant="h6" sx={{textAlign:"center"}}>Email:{user.email}</Typography>
-        <Typography variant="h6" sx={{textAlign:"center"}}>Password:{user.password}</Typography>
-        <Typography variant="h6" sx={{textAlign:"center"}}>Gender:{user.gender}</Typography>
+        <Typography variant="h6" >Username:{user.name}</Typography>
+        <Typography variant="h6" >Email:{user.email}</Typography>
+        <Typography variant="h6" >Password:{user.password}</Typography>
+        <Typography variant="h6" >Gender:{user.gender}</Typography>
         
         
-       
+       <Button variant="contained" color="error" onClick={handleLogout} sx={{textAlign:"center", marginTop:10}}>Logout</Button>
         
 
-    </div>
+    </Box>
     );
 }
 

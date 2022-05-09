@@ -13,10 +13,18 @@ const AuthProvider = ({ children }) => {
     
   };
 
+  const logout = (callback) => {
+    setLoggedIn(false);
+    setUser(null)
+
+    callback()
+  }
+
   const values = {
     user,
     loggedIn,
-    login
+    login,
+    logout
   };
 
   return <AuthContext.Provider value={values}>{children}</AuthContext.Provider>;
