@@ -3,13 +3,17 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 import { useAuth } from "../../contexts/AuthContext";
 
 const Navbar = () => {
-  const { loggedIn } = useAuth();
+  const { loggedIn, logout } = useAuth();
   console.log(loggedIn);
+
+  const handleLogout = async() => {
+    logout()
+  }
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
@@ -24,7 +28,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="right">
+      <div className={styles.right}>
         {!loggedIn && (
           <>
             <Stack spacing={2} direction="row">
@@ -34,7 +38,7 @@ const Navbar = () => {
                 </Button>
               </Link>
               <Link to="/signup" style={{ textDecoration: "none" }}>
-                <Button size="small" variant="contained" color="secondary" >
+                <Button size="small" variant="contained" color="secondary">
                   SIGN UP
                 </Button>
               </Link>
@@ -43,12 +47,20 @@ const Navbar = () => {
         )}
         {loggedIn && (
           <>
-            <Link to="/profile" style={{ textDecoration: "none" }}>
-              <Button size="small" variant="contained" color="error" startIcon={<AccountCircleIcon />}>
-                {" "}
-                PROFILE{" "}
-              </Button>
-            </Link>
+            <>
+            <Stack spacing={2} direction="row">
+              <Link to="/profile" style={{ textDecoration: "none" }}>
+                <Button size="small" variant="contained" color="error" startIcon={<AccountCircleIcon />}>
+                  PROFILE{" "}
+                </Button>
+              </Link>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Button size="small" variant="contained" color="secondary" onClick={handleLogout}>
+                  LOGOUT
+                </Button>
+              </Link>
+            </Stack>
+          </>
           </>
         )}
       </div>
@@ -57,3 +69,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

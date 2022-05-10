@@ -1,19 +1,15 @@
 import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import { Box,Typography, Button } from "@mui/material";
+import { Box,Typography} from "@mui/material";
 
-const Profile = ({history}) => {
-    const {user, logout} = useAuth()
+
+const Profile = () => {
+    const {user} = useAuth()
     console.log(user)
    
+   
 
-    const handleLogout = async() => {
-        logout(() => {
-            history.push("/")
-            console.log(history.push)
-            console.log("çalışıyor")
-        })
-    }
+
 
     return(
     <Box sx={{textAlign:"center"}}>
@@ -26,7 +22,7 @@ const Profile = ({history}) => {
         <Typography variant="h6" >Gender:{user.gender}</Typography>
         
         
-       <Button variant="contained" color="error" onClick={handleLogout} sx={{textAlign:"center", marginTop:10}}>Logout</Button>
+       
         
 
     </Box>
