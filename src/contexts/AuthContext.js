@@ -3,21 +3,26 @@ import { useContext, createContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
 
+
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const localAuth = localStorage.getItem("user-info") ? JSON.parse(localStorage.getItem("user-info")) : null
+  const [user, setUser] = useState(localAuth);
   const [loggedIn, setLoggedIn] = useState(false);
 
   const login = (data) => {
     setLoggedIn(true);
     setUser(data.user);
+
+    localStorage.setItem("user-info", JSON.stringify(data.user))
     
   };
 
-  const logout = (callback) => {
+  const logout = () => {
     setLoggedIn(false);
     setUser(null)
+    localStorage.clear()
 
-    callback()
+    
   }
 
   const values = {

@@ -1,0 +1,100 @@
+{
+  "products": [
+     {
+      "id": "1",
+      "name": "Scissor",
+      "price": 60,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://m.media-amazon.com/images/I/31O-zrX4OdL._AC_SY1000_.jpg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "2",
+      "name": "Cake",
+      "price": 160,
+      "desc": "Red and White Wedding Cake, which hits the happy print with its simple, elegant and perfect taste",
+      "imgUrl": "https://www.garipusta.com.tr/content/images/thumbs/0000314_nisan-dugun-pastasi-1.jpeg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "3",
+      "name": "Bride Gown",
+      "price": 760,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://cdn.essensedesigns.com/uploads/2020/11/1.S20-Essense.D3280LS-SS.jpg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "4",
+      "name": "Wedding Flower",
+      "price": 360,
+      "desc": "Bridal flower adorned with beautiful roses, befitting your wedding dress",
+      "imgUrl": "https://www.arabiaweddings.com/sites/default/files/styles/max750/public/albums/2018/06/20/colorful_bridal_bouquet_1.jpg?itok=Z0tX9vvl",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "5",
+      "name": "Scissor",
+      "price": 60,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://m.media-amazon.com/images/I/31O-zrX4OdL._AC_SY1000_.jpg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "6",
+      "name": "Cake",
+      "price": 160,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://www.garipusta.com.tr/content/images/thumbs/0000314_nisan-dugun-pastasi-1.jpeg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "7",
+      "name": "Bride Gown",
+      "price": 760,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://cdn.essensedesigns.com/uploads/2020/11/1.S20-Essense.D3280LS-SS.jpg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "8",
+      "name": "Wedding Flower",
+      "price": 360,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://www.arabiaweddings.com/sites/default/files/styles/max750/public/albums/2018/06/20/colorful_bridal_bouquet_1.jpg?itok=Z0tX9vvl",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "9",
+      "name": "Scissor",
+      "price": 60,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://m.media-amazon.com/images/I/31O-zrX4OdL._AC_SY1000_.jpg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "10",
+      "name": "Cake",
+      "price": 160,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://www.garipusta.com.tr/content/images/thumbs/0000314_nisan-dugun-pastasi-1.jpeg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "11",
+      "name": "Bride Gown",
+      "price": 760,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://cdn.essensedesigns.com/uploads/2020/11/1.S20-Essense.D3280LS-SS.jpg",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    },
+    {
+      "id": "12",
+      "name": "Wedding Flower",
+      "price": 360,
+      "desc": "lorem ipsum doler sit upsetlsdflj",
+      "imgUrl": "https://www.arabiaweddings.com/sites/default/files/styles/max750/public/albums/2018/06/20/colorful_bridal_bouquet_1.jpg?itok=Z0tX9vvl",
+      "longDesc": "If you have found the wedding dress of your dreams, place your order now. We will call you for your current measurements before producing according to your marriage date. Production time is completed within 10-25 working days depending on the product. The production time for the product you want is in the product description section."
+    }
+  ]
+}

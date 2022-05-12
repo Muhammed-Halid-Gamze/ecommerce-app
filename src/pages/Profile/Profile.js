@@ -13,7 +13,10 @@ const Profile = () => {
 
     return(
     <Box sx={{textAlign:"center"}}>
-        <Typography variant="h4" >My Profile</Typography>
+        <Typography variant="h4" >{`Hello ${user.name}`}</Typography>
+        <br/>
+        <Typography variant="h5" > Your user information is below </Typography>
+        
 
         <br/>
         <Typography variant="h6" >Username:{user.name}</Typography>
