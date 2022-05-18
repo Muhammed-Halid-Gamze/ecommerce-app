@@ -24,8 +24,10 @@ import { useFormik } from "formik";
 import validationSchema from "./Validation";
 
 import {useAuth} from "../../../contexts/AuthContext"
+import { useNavigate } from "react-router-dom";
 
-const SignUp = () => {
+const SignUp = ({history}) => {
+  let navigate = useNavigate();
   const {login} =useAuth();
   const formik = useFormik({
     initialValues: {
@@ -38,12 +40,14 @@ const SignUp = () => {
     },
     validationSchema,
     onSubmit: async (values, props) => {
+      navigate("/profile");
       const registerResponse = ({
         user: values,
         // email:values.email,
         // password:values.password
       })
       login(registerResponse);
+      history.push("/profile")
       console.log(registerResponse);
       setTimeout(() => {
         props.resetForm();
