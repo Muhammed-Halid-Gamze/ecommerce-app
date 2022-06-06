@@ -7,10 +7,17 @@ const BasketContext = createContext();
 const BasketProvider = ({children}) => {
     const [items, setItems] = useState([]);
     
-    const addToBasket = (data) => {
-        setItems((prev) => [...prev, data]);
-    };
-    const values = {
+    const addToBasket = (data, findBasketItem) => {
+        if (!findBasketItem){
+
+            return setItems((items) => [data, ...items]);
+    }
+    setItems( (prev) => [...prev, data]);
+    const filtered = items.filter((item)=> item._id !== findBasketItem._id);
+    setItems(filtered);
+};
+
+const values = {
         items,
         setItems,
         addToBasket,
