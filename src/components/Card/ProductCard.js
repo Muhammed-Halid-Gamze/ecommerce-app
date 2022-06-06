@@ -6,7 +6,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions, Button } from "@mui/material";
 
+import { useBasket } from "../../contexts/BasketContext";
+
 const ProductCard = ({ product }) => {
+
+  const {addToBasket} =useBasket();
   return (
     <Card
       sx={{
@@ -37,8 +41,8 @@ const ProductCard = ({ product }) => {
           </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary" variant="contained">
-              ADD TO CART
+            <Button size="small" color="primary" variant="contained" >
+              VIEW DETAIL
             </Button>
           </CardActions>
       </Link>

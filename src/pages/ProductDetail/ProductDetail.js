@@ -13,6 +13,8 @@ import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 
+
+import { useBasket } from "../../contexts/BasketContext";
 import { MyList } from "../Products/Products";
 console.log(MyList);
 const ProductList = JSON.parse(JSON.stringify(myProductList));
@@ -21,6 +23,7 @@ const ProductList = JSON.parse(JSON.stringify(myProductList));
 const ProductDetail = () => {
   const { product_id } = useParams();
   const ViewProduct = ProductList[product_id];
+  const {addToBasket} = useBasket();
   // console.log(ViewProduct);
 
   return (
@@ -98,7 +101,7 @@ const ProductDetail = () => {
               </Typography>
             </CardContent>
             <CardActions style={{ justifyContent: "center" }}>
-              <Button size="small" variant="contained">
+              <Button size="small" variant="contained" onClick={()=> addToBasket(ViewProduct)}>
                 ADD TO CART
               </Button>
             </CardActions>

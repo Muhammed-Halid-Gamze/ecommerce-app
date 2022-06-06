@@ -6,14 +6,16 @@ import Button from "@mui/material/Button";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 import { useAuth } from "../../contexts/AuthContext";
+import { useBasket } from "../../contexts/BasketContext";
 
 const Navbar = () => {
   const { loggedIn, logout } = useAuth();
+  const { items } = useBasket();
   console.log(loggedIn);
 
-  const handleLogout = async() => {
-    logout()
-  }
+  const handleLogout = async () => {
+    logout();
+  };
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
@@ -48,19 +50,36 @@ const Navbar = () => {
         {loggedIn && (
           <>
             <>
-            <Stack spacing={2} direction="row">
-              <Link to="/profile" style={{ textDecoration: "none" }}>
-                <Button size="small" variant="contained" color="error" startIcon={<AccountCircleIcon />}>
-                  PROFILE{" "}
-                </Button>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <Button size="small" variant="contained" color="secondary" onClick={handleLogout}>
-                  LOGOUT
-                </Button>
-              </Link>
-            </Stack>
-          </>
+              <Stack spacing={2} direction="row">
+                  {items.length > 0 && (
+                    <Link to="/basket" style={{ textDecoration: "none" }} >
+                      <Button size="small" variant="contained" color="success">
+                        BASKET ({items.length}) 
+                      </Button>
+                    </Link>
+                  )}
+                <Link to="/profile" style={{ textDecoration: "none" }}>
+                  <Button
+                    size="small"
+                    variant="contained"
+                    color="error"
+                    startIcon={<AccountCircleIcon />}
+                  >
+                    PROFILE{" "}
+                  </Button>
+                </Link>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <Button
+                    size="small"
+                    variant="contained"
+                    color="secondary"
+                    onClick={handleLogout}
+                  >
+                    LOGOUT
+                  </Button>
+                </Link>
+              </Stack>
+            </>
           </>
         )}
       </div>
@@ -69,5 +88,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
