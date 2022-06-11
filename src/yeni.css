@@ -209,45 +209,7 @@
 
 
 
-/* 
-.mybanner {
-    margin: 20px 0 ;
-    padding: 35px 0 ;
-    box-sizing: border-box;
-    max-height: 150px;
-    background-image: url("http://www.shopnarinmoda.com/wp-content/uploads/2021/09/Narin-Moda-Banner-3-1280-550.jpg");
-    background-color: #de413a;
-    text-align: center;
-    justify-content: center;
-    vertical-align: center;
-	  
 
-
-
-}
-
-.mybanner h2 {
-
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-
-
-} */
-
-/* #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
-    background: transparent;
-    color: #fff;
-    font-weight: normal;
-    text-decoration: none;
-    border-color: #fff;
-} */
-
-/* #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
-margin-left:0px !important;
-	  
-   
-} */
 .onsale {
     display: none;
 }
@@ -266,13 +228,10 @@ body .woocommerce input.button.alt {
     font-weight: 500;
 }
 
-/* #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner, #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before, #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {
-   
-    display:none
-}
- */
 
-SON DÜZENLEME MENÜ - SELÇUK @media only screen and (min-width: 769px) {
+
+/*SON DÜZENLEME MENÜ - SELÇUK*/
+@media only screen and (min-width: 769px) {
     .mega-menu-wrap {
         background: none !important;
     }
@@ -401,14 +360,7 @@ SON DÜZENLEME MENÜ - SELÇUK @media only screen and (min-width: 769px) {
 
 }
 
-form.customize-unpreviewable,
-form.customize-unpreviewable input,
-form.customize-unpreviewable select,
-form.customize-unpreviewable button,
-a.customize-unpreviewable,
-area.customize-unpreviewable {
-    /* cursor: not-allowed !important; */
-}
+
 
 .qtyTotal {
     background-color: #de413a;
@@ -433,7 +385,7 @@ area.customize-unpreviewable {
     font-weight: 600;
 }
 
-..widget_products .product_list_widget span.product-title {
+.widget_products .product_list_widget span.product-title {
     color: #2c2c3d;
     font-weight: 600;
 }
@@ -463,19 +415,22 @@ area.customize-unpreviewable {
     text-align: center;
 }
 
-@media (max-width: 1023px){
-.gm-navigation-drawer .gm-search, .gm-navigation-drawer .gm-minicart {
-    color: #de413a !important;
+@media (max-width: 1023px) {
+
+    .gm-navigation-drawer .gm-search,
+    .gm-navigation-drawer .gm-minicart {
+        color: #de413a !important;
+    }
 }
-}
-.main-search-inner{
-	width:1200px;
+
+.main-search-inner {
+    width: 1200px;
 }
 
 
 /* madra deneme */
 #header-container {
-	background-color: #000 !important !important;
+    background-color: #000 !important;
 }
 
 
@@ -484,228 +439,276 @@ area.customize-unpreviewable {
 
 
 /*******************/
-/**asistan düğün mekanı**//
-
-
-
+/**asistan düğün mekanı**/
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_4 .q-inner .o-btn-action, .ff_conv_app_4 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_4 .q-inner .o-btn-action,
+.ff_conv_app_4 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_4 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/crop-elegant-newlyweds-near-lake-scaled.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
+    height: 100vh !important;
 }
+
 .ff_conv_app_4 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_4 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_4 .q-inner .o-btn-action, .ff_conv_app_4 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_4 .q-inner .o-btn-action,
+.ff_conv_app_4 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
-.Y2IQFc{
-	color:#2c2c3d !important;
+
+.Y2IQFc {
+    color: #2c2c3d !important;
 
 
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
-}
-.ff_conv_app_4 .f-enter .f-enter-desc{
-	display:none !important;
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
 
-@media screen and (max-width: 1023px){
-.ff_conv_app_frame .vff .footer-inner-wrap .f-nav a.ffc_power {
-  
+.ff_conv_app_4 .f-enter .f-enter-desc {
     display: none !important;
 }
+
+@media screen and (max-width: 1023px) {
+    .ff_conv_app_frame .vff .footer-inner-wrap .f-nav a.ffc_power {
+
+        display: none !important;
+    }
 }
+
 /***************/
 /**düğün asistanı gelinlik**/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_5 .q-inner .o-btn-action, .ff_conv_app_5 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_5 .q-inner .o-btn-action,
+.ff_conv_app_5 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_5 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/wepik-2022322-152349-1.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_5 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_5 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_5 .q-inner .o-btn-action, .ff_conv_app_5 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_5 .q-inner .o-btn-action,
+.ff_conv_app_5 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_5 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_5 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /*****************deneme*/
 .container {
-  
+
     width: 100%;
 }
+
 /***************************/
 /****düğün fotoğrafçısı **/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_6 .q-inner .o-btn-action, .ff_conv_app_5 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_6 .q-inner .o-btn-action,
+.ff_conv_app_5 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_6 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/wepik-2022327-153727.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_6 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_6 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_6 .q-inner .o-btn-action, .ff_conv_app_5 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_6 .q-inner .o-btn-action,
+.ff_conv_app_5 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_6 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_6 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /****Kuaför ve Güzellik ***/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_7 .q-inner .o-btn-action, .ff_conv_app_5 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_7 .q-inner .o-btn-action,
+.ff_conv_app_5 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_7 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/wepik-2022320-11635.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_7 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_7 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_7 .q-inner .o-btn-action, .ff_conv_app_7 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_7 .q-inner .o-btn-action,
+.ff_conv_app_7 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_7 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_7 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /****Balayı ve Tatil ****/
@@ -713,898 +716,1103 @@ area.customize-unpreviewable {
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_6 .q-inner .o-btn-action, .ff_conv_app_6 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_6 .q-inner .o-btn-action,
+.ff_conv_app_6 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_6 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/wepik-2022327-153727.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_6 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_6 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_6 .q-inner .o-btn-action, .ff_conv_app_6 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_6 .q-inner .o-btn-action,
+.ff_conv_app_6 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_6 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_6 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /****Kuaför ve Güzellik ***/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_8 .q-inner .o-btn-action, .ff_conv_app_8 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_8 .q-inner .o-btn-action,
+.ff_conv_app_8 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_8 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/04/wepik-2022323-111634.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_8 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_8 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_8 .q-inner .o-btn-action, .ff_conv_app_8 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_8 .q-inner .o-btn-action,
+.ff_conv_app_8 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_8 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_8 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /****Organizasyonlar ***/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_9 .q-inner .o-btn-action, .ff_conv_app_9 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_9 .q-inner .o-btn-action,
+.ff_conv_app_9 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_9 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/04/wepik-2022322-114415.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_9 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_9 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_9 .q-inner .o-btn-action, .ff_conv_app_9 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_9 .q-inner .o-btn-action,
+.ff_conv_app_9 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_9 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_9 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Catering ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_10 .q-inner .o-btn-action, .ff_conv_app_10 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_10 .q-inner .o-btn-action,
+.ff_conv_app_10 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_10 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/closed-metal-pots-1.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_10 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_10 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_10 .q-inner .o-btn-action, .ff_conv_app_10 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_10 .q-inner .o-btn-action,
+.ff_conv_app_10 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_10 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_10 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Müzik ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_11 .q-inner .o-btn-action, .ff_conv_app_11 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_11 .q-inner .o-btn-action,
+.ff_conv_app_11 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_11 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/06/closeup-dj-working-blue-light-1.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_11 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_11 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_11 .q-inner .o-btn-action, .ff_conv_app_11 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_11 .q-inner .o-btn-action,
+.ff_conv_app_11 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_11 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_11 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Gelin Arabası ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_12 .q-inner .o-btn-action, .ff_conv_app_12 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_12 .q-inner .o-btn-action,
+.ff_conv_app_12 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_12 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/06/vintage-car-with-wedding-bouquet.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_12 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_12 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_12 .q-inner .o-btn-action, .ff_conv_app_12 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_12 .q-inner .o-btn-action,
+.ff_conv_app_12 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_12 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_12 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Çiçekçi ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_13 .q-inner .o-btn-action, .ff_conv_app_13 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_13 .q-inner .o-btn-action,
+.ff_conv_app_13 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_13 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/04/wepik-2022322-153816.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_13 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_13 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_13 .q-inner .o-btn-action, .ff_conv_app_13 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_13 .q-inner .o-btn-action,
+.ff_conv_app_13 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_13 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_13 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Pasta ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_14 .q-inner .o-btn-action, .ff_conv_app_14 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_14 .q-inner .o-btn-action,
+.ff_conv_app_14 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_14 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/wepik-2022322-114415.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_14 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_14 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_14 .q-inner .o-btn-action, .ff_conv_app_13 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_14 .q-inner .o-btn-action,
+.ff_conv_app_13 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_14 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_14 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Davetiye ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_15 .q-inner .o-btn-action, .ff_conv_app_15 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_15 .q-inner .o-btn-action,
+.ff_conv_app_15 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_15 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/06/groom-invitation-envelope-wedding-concept.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_15 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_15 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_15 .q-inner .o-btn-action, .ff_conv_app_15 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_15 .q-inner .o-btn-action,
+.ff_conv_app_15 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_15 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_15 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Nikah Şekeri ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_16 .q-inner .o-btn-action, .ff_conv_app_16 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_16 .q-inner .o-btn-action,
+.ff_conv_app_16 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_16 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/06/delicious-sweets-candy-catering.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_16 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_16 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_16 .q-inner .o-btn-action, .ff_conv_app_16 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_16 .q-inner .o-btn-action,
+.ff_conv_app_16 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_16 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_16 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Alyans ve Takı ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_17 .q-inner .o-btn-action, .ff_conv_app_17 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_17 .q-inner .o-btn-action,
+.ff_conv_app_17 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_17 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/wepik-2022410-15412.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_17 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_17 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_17 .q-inner .o-btn-action, .ff_conv_app_17 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_17 .q-inner .o-btn-action,
+.ff_conv_app_17 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_17 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_17 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Mobilya ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_18 .q-inner .o-btn-action, .ff_conv_app_18 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_18 .q-inner .o-btn-action,
+.ff_conv_app_18 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_18 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/brown-sofa-wooden-table-living-room-interior-with-plant-concrete-wall.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_18 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_18 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_18 .q-inner .o-btn-action, .ff_conv_app_18 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_18 .q-inner .o-btn-action,
+.ff_conv_app_18 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_18 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_18 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
+
 /**** Perde ****/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_19 .q-inner .o-btn-action, .ff_conv_app_19 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_19 .q-inner .o-btn-action,
+.ff_conv_app_19 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_19 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/curtain-with-sunlight.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_19 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_19 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_19 .q-inner .o-btn-action, .ff_conv_app_19 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_19 .q-inner .o-btn-action,
+.ff_conv_app_19 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_19 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_19 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Dans ve Halk Oyunları **/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_20 .q-inner .o-btn-action, .ff_conv_app_20 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_20 .q-inner .o-btn-action,
+.ff_conv_app_20 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_20 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/06/beautiful-shot-wedding-couple-dances-park.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_20 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_20 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_20 .q-inner .o-btn-action, .ff_conv_app_20 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_20 .q-inner .o-btn-action,
+.ff_conv_app_20 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_20 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_20 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Beyaz Eşya **/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_21 .q-inner .o-btn-action, .ff_conv_app_21 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_21 .q-inner .o-btn-action,
+.ff_conv_app_21 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_21 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/washing-machine-minimal-laundry-room-interior-design-scaled.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_21 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_21 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_21 .q-inner .o-btn-action, .ff_conv_app_21 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_21 .q-inner .o-btn-action,
+.ff_conv_app_21 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_21 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_21 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Vip Araç Kiralama **/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_22 .q-inner .o-btn-action, .ff_conv_app_22 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_22 .q-inner .o-btn-action,
+.ff_conv_app_22 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_22 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/handsome-business-man-by-white-car.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_22 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_22 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_22 .q-inner .o-btn-action, .ff_conv_app_22 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_22 .q-inner .o-btn-action,
+.ff_conv_app_22 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_22 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_22 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }
 
 /**** Ayakkabı **/
 
 .footer-inner-wrap .f-nav {
     display: none;
-    
+
 }
-.ff_conv_app_23 .q-inner .o-btn-action, .ff_conv_app_23 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_23 .q-inner .o-btn-action,
+.ff_conv_app_23 .footer-inner-wrap .f-nav {
     background-color: #de413a;
 }
+
 .ff_conv_app_23 {
     background-color: #ffffffb8 !important;
     background-image: url(http://dugunsepetin.com/wp-content/uploads/2022/05/stylish-girl-sitting-floor-dressing-room-with-smartphone-hands-writes-message-surrounded-by-variety-shoes-she-is-dressed-black-skirt-her-feet-silver-luxury-shoes-e1654247944524.jpg) !important;
     background-blend-mode: overlay !important;
-	height:100vh !important;
-	
+    height: 100vh !important;
+
 }
+
 .ff_conv_app_23 .ffc-counter-div span {
     color: #de413a;
 }
+
 .ff_conv_app_23 .f-answer .f-radios-wrap ul li {
     background-color: #de413a02 !important;
     border: 1px solid #de413a;
 }
-.ffc_conv_wrapper .ffc_inline_form{
-	height:100vh;
+
+.ffc_conv_wrapper .ffc_inline_form {
+    height: 100vh;
 }
-.ffc_power{
-	display:none;
+
+.ffc_power {
+    display: none;
 }
-.ff_conv_app_23 .q-inner .o-btn-action, .ff_conv_app_23 .footer-inner-wrap .f-nav {
+
+.ff_conv_app_23 .q-inner .o-btn-action,
+.ff_conv_app_23 .footer-inner-wrap .f-nav {
     background-color: #de413a !important;
 }
 
-}
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
     max-width: 900px;
     text-align: center;
 }
+
 .vff a {
-	background-color:#de413a !important;
-	color:#FFFFFF;
-	font-size:600;
-	font-weight:"bold";
+    background-color: #de413a !important;
+    color: #FFFFFF;
+    font-size: 600;
+    font-weight: "bold";
 }
-.ff_conv_app_23 .f-enter .f-enter-desc{
-	display:none !important;
+
+.ff_conv_app_23 .f-enter .f-enter-desc {
+    display: none !important;
 }
+
 .ff_conv_app_frame .vff.vff_layout_default .f-container {
-    
+
     max-width: 900px !important;
-    
+
 }

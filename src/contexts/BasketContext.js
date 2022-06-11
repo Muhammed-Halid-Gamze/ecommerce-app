@@ -5,6 +5,7 @@ const BasketContext = createContext();
 
 
 const BasketProvider = ({children}) => {
+    // const localBasket = localStorage.getItem("basket") ? JSON.parse(localStorage.getItem("basket")) : null
     const [items, setItems] = useState([]);
     
     const addToBasket = (data, findBasketItem) => {
@@ -15,6 +16,8 @@ const BasketProvider = ({children}) => {
     setItems( (prev) => [...prev, data]);
     const filtered = items.filter((item)=> item._id !== findBasketItem._id);
     setItems(filtered);
+
+    // localStorage.setItem("basket", JSON.stringify(data))
 };
 
 const values = {
